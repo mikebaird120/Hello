@@ -1,3 +1,15 @@
+.tab-content {
+    display: none; /* Hide all tabs by default */
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.tab-content.active {
+    display: block; /* Show only the active tab */
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
