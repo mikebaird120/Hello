@@ -11,18 +11,19 @@
         <h1>Header for website</h1>
         <p>:)</p>
     </header>
-    
-    <div class="tabs">
 
-        <button class="tab-button hide-all-button" onclick="hideAllTabs()">Hide All Tabs</button>
-        
-        
+    <div class="tabs">
+        <!-- Tab buttons -->
         <button class="tab-button" onclick="openTab(event, 'tab1')">Tab 1</button>
         <button class="tab-button" onclick="openTab(event, 'tab2')">Tab 2</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
+
+        <!-- Hide All Tabs button placed after the other buttons, hidden by default -->
+        <button class="hide-all-button" onclick="hideAllTabs()">Hide All Tabs</button>
     </div>
 
-    <div id="tab1" class="tab-content active">
+    <!-- Tab content -->
+    <div id="tab1" class="tab-content">
         <h2>Tab 1 Content</h2>
         <p>This is the content of Tab 1.</p>
     </div>
@@ -36,18 +37,18 @@
         <h2>Tab 3 Content</h2>
         <p>This is the content of Tab 3.</p>
     </div>
-    
+
     <main>
         <section>
             <h2>About This Site</h2>
-            <p>This is a simple static website</p>
+            <p>This is a simple static website.</p>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025joe smoe</p>
+        <p>&copy; 2025 Joe Smoe</p>
     </footer>
-    
+
     <script src="script.js"></script>
-    
 </body>
 </html>
