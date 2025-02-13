@@ -9,6 +9,38 @@
 .tab-content.active {
     display: block; /* Show only the active tab */
 }
+.tab-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the "Hide All Tabs" button by default */
+.hide-all-button {
+    display: none;
+}
+
+/* Style for the Hide All Tabs button */
+.tab-button:first-child {
+    background-color: #f44336; /* Red color for the hide button */
+    color: white;
+}
+
+.tab-button:first-child:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
 
 body {
     font-family: Arial, sans-serif;
