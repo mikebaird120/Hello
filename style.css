@@ -1,47 +1,4 @@
-.tab-content {
-    display: none; /* Hide all tabs by default */
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin: 20px;
-    border-radius: 5px;
-}
-
-.tab-content.active {
-    display: block; /* Show only the active tab */
-}
-.tab-button {
-    padding: 10px 20px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    background-color: #f4f4f4;
-    cursor: pointer;
-}
-
-.tab-button:hover {
-    background-color: #ddd;
-}
-
-.tab-button.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Hide the "Hide All Tabs" button by default */
-.hide-all-button {
-    display: none;
-}
-
-/* Style for the Hide All Tabs button */
-.tab-button:first-child {
-    background-color: #f44336; /* Red color for the hide button */
-    color: white;
-}
-
-.tab-button:first-child:hover {
-    background-color: #d32f2f; /* Darker red on hover */
-}
-
-
+/* Style for the entire page */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -67,4 +24,63 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Tabs container to stack buttons vertically */
+.tabs {
+    display: flex;
+    flex-direction: column; /* Stack the tab buttons vertically */
+    align-items: center;     /* Center align the buttons horizontally */
+    margin-bottom: 20px;     /* Add some space below the buttons */
+}
+
+/* Style for the tab buttons */
+.tab-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    width: 200px;            /* Adjust width */
+    text-align: center;      /* Center text in the button */
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style for the Hide All Tabs button (placed at the bottom) */
+.hide-all-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f44336; /* Red color */
+    color: white;
+    cursor: pointer;
+    width: 200px; /* Same width as the tabs for alignment */
+    display: none; /* Hidden by default */
+}
+
+/* Hover effect for Hide All Tabs button */
+.hide-all-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Hide all tabs content by default */
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Show active tab content */
+.tab-content.active {
+    display: block;
 }
