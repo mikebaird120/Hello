@@ -13,14 +13,14 @@
     </header>
 
     <div class="tabs">
-        <!-- Tab buttons -->
+        <!-- Tab buttons (will remain horizontal) -->
         <button class="tab-button" onclick="openTab(event, 'tab1')">Tab 1</button>
         <button class="tab-button" onclick="openTab(event, 'tab2')">Tab 2</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
-
-        <!-- Hide All Tabs button placed after the other buttons, hidden by default -->
-        <button class="hide-all-button" onclick="hideAllTabs()">Hide All Tabs</button>
     </div>
+
+    <!-- Hide All Tabs button (placed after tab buttons, hidden by default) -->
+    <button class="hide-all-button" onclick="hideAllTabs()">Hide All Tabs</button>
 
     <!-- Tab content -->
     <div id="tab1" class="tab-content">
