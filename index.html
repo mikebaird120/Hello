@@ -11,12 +11,13 @@
         <h1>Header for website</h1>
         <p>:)</p>
     </header>
-       <div class="tabs">
-        <button class="tab-button" onclick="hideAllTabs()">Hide All Tabs</button>
-        <button class="tab-button active" onclick="openTab(event, 'tab1')">Tab 1</button>
+    
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab(event, 'tab1')">Tab 1</button>
         <button class="tab-button" onclick="openTab(event, 'tab2')">Tab 2</button>
         <button class="tab-button" onclick="openTab(event, 'tab3')">Tab 3</button>
-        </div>
+        <button class="tab-button" onclick="hideAllTabs()">Hide All Tabs</button> <!-- New button -->
+    </div>
 
     <div id="tab1" class="tab-content active">
         <h2>Tab 1 Content</h2>
